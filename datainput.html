@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inputData {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: black 2px solid;
+    position: fixed;
+    left: 200px;
+}
+
+#demo {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+        </style>
+    </head>
+    <body>
+    <input type="text" id="myInput" class="inputData" oninput="myFunction()"><br>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput").value;
+            document.getElementById("demo").innerHTML =  x;  
+}
+    </script>
+    </body>
+</html>
